@@ -1,0 +1,14 @@
+{
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "python": "python"
+  },
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": true,
+  "djlint.formatCss": true,
+  "djlint.formatJs": true,
+  "djlint.guessProfile": true,
+  "terminal.integrated.commandsToSkipShell": [
+    "\"[html]\": {   \"editor.defaultFormatter\": \"monosans.djlint\" }, \"[django-html]\": {   \"editor.defaultFormatter\": \"monosans.djlint\" },"
+  ]
+}

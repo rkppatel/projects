@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block title %}Contact Us{% endblock title %}
+{%block body%} 
+
+<h2 class="text-center p-3">---Get in Touch---</h2>
+<form method="post" action="/contact">
+{% csrf_token %}
+<div class="mx-auto w-75">
+  <div class="mb-2 ">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="mb-2 ">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="example" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="example" name="example" rows="3"></textarea>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto mt-3">
+    <button class="btn btn-success" type="submit">SUMBIT</button>
+  </div>
+</div>
+</form>
+
+
+{% endblock body%}
